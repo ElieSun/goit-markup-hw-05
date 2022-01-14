@@ -800,14 +800,7 @@ a {
   fill: #2196f3;
   border-color: #2196f3;
 }
-/* .static-clients-list {
-  border-radius: 4px;
-  border: 1px solid #afb1b8;
-  margin-right: 30px;
-}
-.static-clients-list:hover {
-  border-color: #2196f3;
-} */
+
 .static-clients-list:last-child {
   margin-right: 0px;
 }
@@ -982,4 +975,34 @@ a {
   height: 100%;
   transform: translateY(100%);
   transition: 250ms linear;
+}
+/* -----------Modalka------------- */
+.modal {
+  width: 500px;
+  min-height: 500px;
+  background-color: #ffffff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+}
+
+.close-modal {
+  width: 30px;
+  height: 30px;
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
 }

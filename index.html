@@ -54,7 +54,7 @@
             <div class="container">
                
                 <h1 class="section-title-1">ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА</h1>
-                <button type="button" class="section-btn-1">Заказать услугу</button>
+                <button type="button" class="section-btn-1" data-modal-open>Заказать услугу</button>
            </div>
         </section>
         <!-- Секция чем мы занимаемся -->
@@ -386,9 +386,21 @@
                     </li>
                 </ul>
             </div>
-        
         </div>
     </footer>
+
+    <!-- Modalka -->
+    <button type="button" class="open-modal" data-modal-open></button>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button data-modal-close class="close-modal">
+                <svg class="close-x" width="18" height="18">
+                    <use href="./img/close-modal.svg"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
