@@ -127,7 +127,6 @@ a {
 .heder-link-mail:active,
 .heder-link-mail:focus {
   color: var(--color-letter-blue);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-link-tel {
   display: flex;
@@ -163,7 +162,7 @@ a {
   color: var(--color-letter-blue);
   display: block;
   padding-top: 32px;
-  padding-bottom: 32px;
+  padding-bottom: 3header-link-portfolio2px;
 }
 .header-link-portfolio {
   font-family: var(--font-family);
@@ -475,6 +474,7 @@ a {
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -849,7 +849,8 @@ a {
   border: 1px solid #afb1b8;
   margin-right: 30px;
   fill: #afb1b8;
-  transition-property: border, fill;
+
+  transition-property: border-color, fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -871,6 +872,10 @@ a {
 .social-network {
   display: flex;
   flex-wrap: wrap;
+
+  transition-property: fill, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-network {
@@ -896,6 +901,7 @@ a {
   background-color: white;
   margin: auto;
   fill: #afb1b8;
+
   transition-property: fill, background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -909,9 +915,6 @@ a {
 .network-link .social-network:hover {
   fill: white;
   background-color: #188ce8;
-  transition-property: transform;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .li-list {
   margin-right: 10px;
@@ -937,6 +940,7 @@ a {
   height: 44px;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.1);
+
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -961,21 +965,23 @@ a {
 }
 .mail-svg {
   fill: currentColor;
+  margin-right: 10px;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .mail-svg:hover {
   fill: #188ce8;
 }
-.mail-svg {
-  margin-right: 10px;
-}
 .tel-svg {
   fill: currentColor;
+  margin-right: 10px;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .tel-svg:hover {
   fill: #188ce8;
-}
-.tel-svg {
-  margin-right: 10px;
 }
 .svg-icons {
   display: flex;
@@ -1002,7 +1008,7 @@ a {
   position: absolute;
   background-color: #2196f3;
   left: 0px;
-  bottom: 0px;
+  bottom: -30px;
 }
 .current-portfolio {
   position: relative;
@@ -1040,7 +1046,9 @@ a {
   letter-spacing: 0.03em;
   padding: 40px;
   height: 100%;
+
   transform: translateY(100%);
+
   transition: transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1112,6 +1120,7 @@ a {
   height: 70px;
   width: 370px;
   transform: translateY(0%);
+  transition: transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
