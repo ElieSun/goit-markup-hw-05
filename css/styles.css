@@ -869,23 +869,6 @@ a {
 
 /* __________Соц сети_________ */
 
-.social-network {
-  display: flex;
-  flex-wrap: wrap;
-
-  transition-property: fill, background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.social-network {
-  background-repeat: no-repeat;
-  content: "";
-  background-size: contain;
-}
-/* .social-network:hover {
-  fill: white;
-} */
 .network-ul-list {
   display: flex;
   justify-content: center;
@@ -1060,7 +1043,7 @@ a {
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.2);
-  transition: opacity 500ms visibility 500ms;
+  transition: opacity 500ms, visibility 500ms;
 }
 .modal {
   width: 500px;
